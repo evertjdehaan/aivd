@@ -50,7 +50,7 @@ if __name__ == '__main__':
     assert _passphrase_valid1('aa bb cc dd ee') == True
     assert _passphrase_valid1('aa bb cc dd aa') == False
     assert _passphrase_valid1('aa bb cc dd aaa') == True
-    print(solve_part1('day04_test.txt'))
+    print(solve_part1('day04_input.txt'))
 
     # solve problem 2
     assert _passphrase_valid2('abcde fghij') == True
@@ -58,4 +58,4 @@ if __name__ == '__main__':
     assert _passphrase_valid2('a ab abc abd abf abj') == True
     assert _passphrase_valid2('iiii oiii ooii oooi oooo') == True
     assert _passphrase_valid2('oiii ioii iioi iiio') == False
-    print(solve_part2('day04_test.txt'))
+    print(solve_part2('day04_input.txt'))
