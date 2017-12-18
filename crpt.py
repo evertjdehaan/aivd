@@ -7,6 +7,7 @@ Created on Fri Dec 30 20:42:21 2016
 
 import unicodedata
 
+
 class Cryptography(object):
     
     alphabet_upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -397,3 +398,7 @@ class Cryptography(object):
                 spaced_message = spaced_message[:key] + ' ' + spaced_message[key:]
                 
         return spaced_message
+
+
+if __name__ == '__main__':
+    pass
