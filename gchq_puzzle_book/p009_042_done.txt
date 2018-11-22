@@ -1,0 +1,19 @@
+# GCHQ Puzzle Book
+#
+# Page 9
+#
+# 42. Premier locations
+# Q: If C=SB, CP=SP, E=GP, MU=OT and TH=WHL, what does L= ?
+
+# Observations
+#
+# 1. "Premier" may refer to the Premier League
+# 2. "MU" looks like "Manchester United", which stadium is Old Trafford (OT)
+
+# A: A
+#    C=SB:   Chelsea's stadium is Stamford Bridge
+#    CP=SP:  Christal Palace's stadium is Selhurst Park
+#    E=GP:   Everton's stadium is Goodison Park
+#    MU=OT:  Manchester United's stadium is Old Trafford
+#    TH=WHL: Tottenham Hotspurs' stadium is White Hart Lane
+#    L=A:    Liverpool's stadium is Anfield
