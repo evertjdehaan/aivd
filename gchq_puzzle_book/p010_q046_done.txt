@@ -1,0 +1,25 @@
+# GCHQ Puzzle Book
+#
+# Page 10
+#
+# 46. Question time
+
+# (a)
+# Q: M, W, F, S, T, T, ?
+# A: S, the letters are the first letters of the days of the week, two days apart
+#      (it is a series of seven, and everything is about times/days/seasons)
+
+# (b)
+# Q: WR, SG, SR, ?
+# A: FL, the letters are the first and last letters of the seasons
+#      (it is a series of four, and everything is about times/days/seasons)
+
+# (c)
+# Q: ..., J, A, S, O, N, ?
+# A: D, the letters are the first letters of the months
+#      (it is a finite series, and everything is about times/days/seasons)
+
+# (d)
+# Q: If 7 + 8 = 3 and 10 + 9 = 7, what is 11 + 2?
+# A: 1, the calculation is modulo 12
+#      (and everything is about times/days/seasons and there are 12 months in a year)
