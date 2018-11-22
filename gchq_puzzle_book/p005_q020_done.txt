@@ -1,0 +1,13 @@
+# GCHQ Puzzle Book
+#
+# Page 5
+#
+# 20. Who?
+# Q: If India=1, Victor=5, X-Ray=10, Lima=50, Charlie=100, Delta=500, who=1000?
+
+# Observations
+#
+# 1. The numbers are roman numbers, the names start with the corresponding roman letter
+# 2. The names are of the NATO alphabet
+
+# A: Mike
