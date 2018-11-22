@@ -18,6 +18,6 @@
 # Observations
 #
 # 1. All answers seem to end with "ent".
-# 2. Ents are tree-like creatures from the books of J.R.R. Tolkien
+# 2. Ents are tree-like creatures from the books of J.R.R. Tolkien, which are very slow ("Don't be hasty")
 
 # A: Ents, created by J.R.R. Tolkien
