@@ -1,0 +1,25 @@
+# GCHQ Puzzle Book
+#
+# Page 8
+#
+# 34. Which word?
+# Q: The following list of words can be divided into two sets, of equal size, on the basis of another word:
+#    AWE     BODY    DAY     FEAR    HAND
+#    HOW     LONE    ONE     THING   TIRE
+#    WHAT    WHERE   WHOLE   WIN
+#    What is the other word?
+
+# Observations
+#
+# 1. WHAT, WHERE, HOW are all question words.
+# 2. LONE and AWE are very specific words...
+#
+# aweSOME     SOMEbody
+# fearSOME    SOMEday
+# handSOME    SOMEhow
+# loneSOME    SOMEone
+# tireSOME    SOMEthing
+# wholeSOME   SOMEwhat
+# winSOME     SOMEwhere
+
+# A: Some.
