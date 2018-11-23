@@ -1,0 +1,50 @@
+# GCHQ Puzzle Book
+#
+# Page 24
+#
+# 22. Christmas songs
+# Q:
+#    a) DKTEHSWHBSOFHYFALALALALALALALALA
+#    b) NLNLNLNLBNISTEKGOFIL
+#    c) TECSWEGTWEDE
+#    d) WTWLYRDYDOWNHESSYRMAKGSACS
+#    e) CSRGONANONFE
+#    f) TYNRLTPRRHJNINAYRRGS
+#    g) RGOTTEBSTTBMBM
+#    h) RTATTEFTFEBYSTASFN
+#    i) SGCSOFASSGINENSGALYECSOFHNAE
+#    j) TSSETESHADFHADAASGTG
+
+# Observations
+#
+# 1. A lot of repeating two letter sequences (LA, NL)
+# 2. The length of all letter strings are even, suggesting letter pairs
+#
+# Christmassy words
+# AS = angels
+# BY = baby
+# CS = Christmas
+# CT = Christ
+# HY = holiday
+# JE BS = jingle bells
+# MO = mistletoe
+# MR = manger
+# RR = reindeer
+# SA CS = Santa Claus
+# SD = shepherd
+# SH = sleigh
+# SN = snowman
+# ST NT = silent night
+# TE = tree
+
+# A:
+#    a) DK TE HS WH BS OF HY FA LA LA LA LA LA LA LA LA
+#    b) NoeL, NoeL, NoeL, NoeL, BorN IS ThE KinG OF IsraeL
+#    c) ThE ChristmaS WE GeT WE DeservE                                     (Emerson, Lake & Palmer - I Believe In Father Christmas)
+#    d) WhaT WilL YouR DaddY DO WheN HE SeeS YouR MamA KissinG SantA ClauS  (Slade – Merry Xmas)
+#    e) CS RG ON AN ON FE
+#    f) TY NR LT PR RH JN IN AY RR GS
+#    g) RG OT TE BS TT BM BM
+#    h) RT AT TE FT FE BY ST AS FN
+#    i) SG CS OF AS SG IN EN SG AL YE CS OF HN AE
+#    j) TS SE TE SH AD FH AD AA SG TG
