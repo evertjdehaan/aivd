@@ -1,0 +1,15 @@
+# GCHQ Puzzle Book
+#
+# Page 4
+#
+# 15. Letter sequence I
+# Q: What is the next entry in each of the following sequences
+#    a) M, V, E, M, J, S, U, ?
+#    b) E, Z, D, V, F, S, S, A, N, Z, ?
+
+# Observations
+#
+# a1. Letters do repeat
+# a2. The letters are the first letters of the planets (Mercury, Venus, Earth, ...)
+
+# aA: N(eptune).
