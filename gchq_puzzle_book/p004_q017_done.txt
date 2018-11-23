@@ -1,0 +1,32 @@
+# GCHQ Puzzle Book
+#
+# Page 4
+#
+# 17. Somwhere
+# Q: a) What does UV stand for?
+#    b) Which Duke Ellington jazz standard has also been recorded by Annie Lennox and Nina Simone?
+#    c) Which boy band represented the UK in the 2011 Eurovision Song Contest?
+#    d) Which piece of music is believed to have been written by Henry VIII?
+#    e) In which US national park is Old Faithful?
+#    f) What do the bells of St Clements say?
+#    g) Which horse won the Grand National in 1973, 1974 and 1977?
+#    What might you find at the end?
+
+# A: Partial answers
+# a) Ultraviolet
+# e) Yellow Stone
+
+# Observations
+#
+# 1. Both answers refer to colours.
+# 2. The title of the question may refer to "Somewhere, over the rainbow" (song).
+# 3. You can supposedly find a pot of gold at the end of the rainbow.
+
+# A: Partial answers (Google)
+# b) Mood Indigo
+# c) Blue
+# d) Greensleeves
+# f) Oranges and Lemons
+# g) Red Rum
+
+# A: A pot of gold.
