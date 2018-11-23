@@ -1,0 +1,27 @@
+# GCHQ Puzzle Book
+#
+# Page 2
+#
+# 7. Aha
+# Q: a) Which canoe, created by the Inuit, is propelled by a double-bladed paddle?
+#    b) Which note is equivalent to two crotchets
+#    c) What is another name for midday?
+#    d) According to the Bible, what was the name of the first woman?
+#    e) What do you call a female sheep?
+#    How would you 'refer' to these answers?
+
+# A: Partial answers
+# a) kayak
+# c) noon
+# d) Eve
+
+# Observations
+#
+# 1. All answers above are palindromes.
+# 2. The title of the question ("aha") and the overall question ("'refer'") also is/contains a palindrome
+
+# A: Partial answers (Google)
+# b) minim (half note)
+# e) ewe
+
+# A: Palindromes.
