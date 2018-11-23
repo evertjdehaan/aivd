@@ -1,0 +1,14 @@
+# GCHQ Puzzle Book
+#
+# Page 2
+#
+# 8. Concealed animal
+# Q: Here is a list of animals. But which other animal is hiding?
+#    RACCOON, PARROT, LEMMING, KOOKABURRA, AARDVARK, LINNET, OTTER
+
+# Observations
+#
+# 1. The question indicates that the answer is in the words itself.
+# 2. All words contain one or more double consonants/vowels.
+
+# A: Cormorant (all double consonants/vowels behind one another).
