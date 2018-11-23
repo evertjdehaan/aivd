@@ -1,0 +1,14 @@
+# GCHQ Puzzle Book
+#
+# Page 12
+#
+# 56. Rooms
+# Q: If Study <-> Kitchen, then Conservatory <-> ?
+
+# Observations
+#
+# 1. The "<->" is a specific notation.
+# 2. There are many types of rooms, so what is the limiting factor? Clue?
+# 3. The study is on the other end of the board of the game Clue compared to the kitchen. Furthermore, the two are connected by a secret passage.
+
+# A: Lounge.
