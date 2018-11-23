@@ -1,0 +1,13 @@
+# GCHQ Puzzle Book
+#
+# Page 5
+#
+# 18. Friends in other countries
+# Q: Gary has friends in countries all around the world including Argentina, Denmark, Russia, Sudan and the United States. Which country is Gary in?
+
+# Observations
+#
+# 1. Friends IN other countries suggests a logical link between the countries and the friends.
+# 2. The mentioned countries all contain a first name: argenTINA, denMARK, rusSia, suDAN, uniTed states
+
+# A: Hungary (because it is a country name containing the name Gary).
