@@ -1,0 +1,23 @@
+# GCHQ Puzzle Book
+#
+# Page 2
+#
+# 6. Where next?
+# Q: What follows Vienna, Brussels, Prague, Copenhagen, Tallinn, Helsinki, Athens, ?
+
+# Observations
+#
+# 1. The answer must be a location ("Where next?").
+# 2. The words are all capital cities.
+#
+# Vienna       Austria
+# Brussels     Belgium
+# Prague       Czech Republic
+# Copenhagen   Denmark
+# Tallinn      Estonia
+# Helsinki     Finland
+# Athens       Greece
+#
+# 3. The corresponding countries are all European countries and the first letters make up the alphabet; the next country must start with an H.
+
+# A: Budapest (Hungary)
