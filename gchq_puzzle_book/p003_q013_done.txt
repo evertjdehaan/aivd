@@ -1,0 +1,15 @@
+# GCHQ Puzzle Book
+#
+# Page 3
+#
+# 13. A round of drinks
+# Q: What could follow Mojito, Eggnog, Riesling, Lemonade, Ouzo, ?
+
+# Observations
+#
+# 1. All words are drinks (as the title suggests).
+# 2. There is not a single correct answer ("could follow").
+# 3. The words start with M-E-R-L-O-?, almost spelling "Merlot", being a drink itself.
+
+# A: Tea (all double consonants/vowels behind one another).
+# A: Tahn (if you believe that the word length (6-6-8-8-4-?) suggests that the last word should be 4 letters in length)
