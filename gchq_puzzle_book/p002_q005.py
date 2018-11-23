@@ -13,7 +13,32 @@
 
 # Observations
 #
-# 1. All answers seem to end with "ent".
-# 2. Ents are tree-like creatures from the books of J.R.R. Tolkien
+# 1. The word on the first line should end with the sound [oses] and should be a name. Moses?
+# 2. The word on the third line should end with the sound [are]. Stare?
+# 3. The third letter of the first guess word is the same as the first letter of the third one. That might be how the square is made up.
+#
+#   MOSES
+#   o t
+#   STARE
+#   e r
+#   s e
+#
+# 4. The word on the third line must be an adjective and might be "eerie"
+#
+#   MOSES
+#   o te
+#   STARE
+#   eerie
+#   s ee
+#
+# 5. The word on the second line must be an adverb and might be "often"
+#
+#   MOSES
+#   often
+#   STARE
+#   eerie
+#   snee
+#
+# 6. The word on the fifth line must be a verb. "Sneer"?
 
-# A: Ents, created by J.R.R. Tolkien
+# A:
