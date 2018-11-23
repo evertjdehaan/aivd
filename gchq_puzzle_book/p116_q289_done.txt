@@ -1,0 +1,23 @@
+# GCHQ Puzzle Book
+#
+# Page 116
+#
+# 289. Sums
+# Q:
+#   (Cadmium + Vanadium - Chlorine)     Cadmium
+#   -------------------------------  -  -------  =  ?
+#              Lithium                  Carbon
+
+# Observations
+#
+# 1. All are elements, which have shorthand notations
+# 2. All shorthand notations are made up of roman numerals
+
+# A: 1
+#   (Cadmium + Vanadium - Chlorine)     Cadmium     Cd + V - Cl     Cd
+#   -------------------------------  -  -------  =  -----------  -  --  =
+#              Lithium                  Carbon           Li         C
+#
+#   CD + V - CL     CD     400 + 5 - 150     400     255     400
+#   -----------  -  --  =  -------------  -  ---  =  ---  -  ---  =  5 - 4  =  1
+#        LI         C            51          100     51      100
