@@ -1,0 +1,26 @@
+# GCHQ Puzzle Book
+#
+# Page 38
+#
+# 61. ... and in English?
+# Q: In French only (2, 3), (9, 10) and (10, 11) have this property. In German only (4, 5), (5, 6), (7, 8) and (8, 9) have this property. What is the situation for English?
+
+# Observations
+#
+# 1. Sets of two numbers, that is what they are looking for.
+#
+#    FRENCH     GERMAN     ENGLISH
+# 1  un         eins       one
+# 2  deux       zwei       two
+# 3  troi       drei       three
+# 4  quatre     vier       four
+# 5  cinq       fünf       five
+# 6  six        sechs      six
+# 7  sept       sieben     seven
+# 8  huit       acht       eight
+# 9  neuf       neun       nine
+# 10 dix        zehn       ten
+#
+# 2. The pairs mentioned have no letters in common between the two written numbers.
+
+# A: There are no pairs. (Each number has at least one letter of the number before it.)
