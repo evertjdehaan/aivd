@@ -1,0 +1,13 @@
+# GCHQ Puzzle Book
+#
+# Page 46
+#
+# 80. Miscellaneous
+# Q: 
+#    (63°09'N 117°16'W   37°55'N 120°25'W   02°07'N 18°06'E   56°12'N 3°0'W) - (37°07'N 82°36'W   14°30'S 69°18'W   51°39'N 02°27'W)?
+
+# Observations
+#
+# (Whati Stent Imese Leven) - (Pound Sina Stone)? -> (What is ten times eleven) - (pounds in a stone)? -> 110 - 14 = 96
+
+# A: 96
