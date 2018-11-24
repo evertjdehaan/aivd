@@ -1,0 +1,38 @@
+# GCHQ Puzzle Book
+#
+# Page 46
+#
+# 82. A to Z
+# Q: 
+#    A = T, U, T, C, P, I                N = N, C, C, B
+#    B = I, M                            O = Y, SA, ???
+#    C = P, B, A                         P = S
+#    D = E, E, S                         Q = SA
+#    E = C, P                            R = U, T, B, DROTC
+#    F = B, L, G, S, I, M, S, A, S       S = A, H, C, I
+#    G = A, M, B, T                      T = L, A
+#    H = A, S, U, R, S, C, S             U = B, A
+#    I = F, S, A, S                      V = G, B, C
+#    J = {}                              W = -
+#    K = K, C, T, U                      X = -
+#    L = A, S                            Y = SA, O
+#    M = U, R                            Z = Z, M, SA, B
+
+# Observations
+#
+# 1. DROTC is a very specific string. Google tells us its the Democratic Republic of the Congo.
+# 2. Congo is, together with Uganda (U), Tanzania (T) and Burundi (B) a neighboring country of Rwanda (R).
+# 3. There is no African country with a J. And Madagascar seems a logical candidate for a country with no neighboring countries. Conclusion: the letters are not necessarily the starting letters of the country names.
+#
+# R (Rwanda) = U (Uganda), T (Tanzania), B (Burundi), DROTC (Congo)
+# J (Madagascar) = {}
+# Y (Swaziland) = SA (South Africa), O (Mozambique)
+#
+# 4. O (Mozambique) = Y (Swaziland), SA (South Africa), ? (Zimbabwe), ? (Zambia), ? (Malawi), ? (Tanzania)
+#
+# Z (Zimbabwe) = Z (Zambia), M (Mozambique), SA (South Afica), B (Botswana)
+# N (Nigeria) = N (Niger), C (Chad), C (Cameroon), B (Benin)
+# D (Djibouti) = E (Eritrea), E (Ethiopia), S (Somalia)
+# 
+
+# A: O (Mozambique) = Y (Swaziland), SA (South Africa), Z (Zimbabwe), Z (Zambia), ? (Malawi), ? (Tanzania)
