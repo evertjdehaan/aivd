@@ -1,0 +1,23 @@
+# GCHQ Puzzle Book
+#
+# Page 39
+#
+# 63. Sums
+# Q: 
+#    a) (Monkey + Dragon + Rabbit) - (Dog + Rat) = ?
+#    b) (OF x EA - FR x SL) / (CR + AL + SH + OZ) = ?
+#    c) (Hobbits in the Fellowship + Elven rings + Dwarvish rings + Towers) x Black Riders = ?
+#    d) ((Anna + Puss - Liss) / Nerk) - Pier = ?
+
+# Observations
+#
+# a1. All animals are part of the Chinese zodiac
+#    (Monkey (9th) + Dragon (5th) + Rabbit (4th)) - (Dog (11th) + Rat (1st)) = (9 + 5 + 4) - (11 + 1) = 6 -> Snake (6th)
+# 
+# c1. (4 Hobbits in the Fellowship + 3 Elven rings + 7 Dwarvish rings + 2 Towers) x 9 Black Riders = (4 + 3 + 7 + 2) x 9 = 144 -> The number of guests at Bilbo's farewell birthday party
+
+# A:
+#    a) Snake
+#    b)
+#    c) The number of guests at Bilbo's farewell birthday party
+#    d)
