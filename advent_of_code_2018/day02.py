@@ -34,6 +34,10 @@ def _find_common_chars_matching_IDs(id_list):
       # Remove the different character
       chars[chars_same.index(False)] = ''
       common_chars = ''.join(chars)
+
+      print(id_list[i])
+      print(id_list[i+1])
+
       break
 
   return common_chars
@@ -42,13 +46,10 @@ def solve_part2(file_path):
   # Brute forcing (comparing each ID with all other IDs) is slow (O(N^2)). There is a faster idea (O(2N)).
   common_chars = ''
 
-  # Read all IDs and sort each ID's letters alphabetically
+  # Read all IDs and sort them alphabetically
   id_list = []
   with open(file_path, 'r') as f:
-    for full_id in f:
-      id_list.append(full_id)
-
-  # Sort all IDs alphabetically
+    id_list = f.read().splitlines()
   id_list.sort()
 
   # Check if any of the two adjacent ones differ by one character and get the common characters
@@ -63,8 +64,6 @@ def solve_part2(file_path):
     # Check if any of the two adjacent ones differ by one character and get the common characters
     common_chars = _find_common_chars_matching_IDs(id_list)
 
-  print(common_chars)
-
   return common_chars
 
 
@@ -74,5 +73,5 @@ if __name__ == '__main__':
     print(solve_part1('day02_input.txt'))
 
     # solve problem 2
-    #assert solve_part2('day02_test2.txt') == 'fgij'
+    assert solve_part2('day02_test2.txt') == 'fgij'
     print(solve_part2('day02_input.txt'))
