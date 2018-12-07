@@ -1,26 +1,25 @@
-import copy
+import numpy as np
+from itertools import combinations_with_replacement
+from operator import mul
 
-arr = [2, 2, 2, 3, 3, 3]
-arr1 = [2, 2, 2, 3, 9]
-arr2 = [2, 2, 3, 3, 6]
-arr3 = [2, 3, 3, 3, 4]
-options = [arr1, arr2, arr3]
+target_sum = 22
+target_product = 216 
 
+# Get the divisors of the product in the range of 1-26
+divisors = []
+for divisor in range(1, 27):
+  if target_product % divisor == 0:
+    divisors.append(divisor)
+
+# Get all combinations of length five (the puzzle size)
+options = combinations_with_replacement(divisors, 5)
+
+# Find the options of which the sum matches the target sum
+viable_options = []
 for option in options:
-  opt = copy.deepcopy(option)
-  opt.append(1)
+  option = np.array(option)
+  if option.sum() == target_sum and option.prod() == target_product:
+    viable_options.append(option)
 
-  for j in range(len(opt)):
-    for k in range(len(opt)):
-      if j < k:
-        opt_new = []
-        opt_new.extend(opt[:j])
-        opt_new.extend(opt[j+1:k])
-        opt_new.extend(opt[k+1:])
-        opt_new.append(opt[j]*opt[k])
-        opt_new.sort()
-        if opt_new not in options:
-          options.append(opt_new)
-    
-for option in options:
-  print(option, sum(option))
+for option in viable_options:
+  print(option, [chr(64+x) for x in option])
