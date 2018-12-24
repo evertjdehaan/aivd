@@ -248,12 +248,12 @@ class Cryptography(object):
                 
         return encoded_text
         
-    def decode_morse(self, morse_code):
+    def decode_morse(self):
         alphabet_old = self.alphabet_morse
         alphabet_new = self.alphabet_lower
         
         for key, val in enumerate(alphabet_old):
-            if val == morse_code:
+            if val == self.encoded_text:
                 return alphabet_new[key]
                 
         return None
