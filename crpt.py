@@ -85,6 +85,33 @@ class Cryptography(object):
         self.set_encoded_text(encoded_text_orig)
         
         return self._add_spaces(decoded_text)
+
+    def get_vigenere_key(self):
+        # Get the decoded and encoded text
+        decoded_text_orig = self.decoded_text
+        decoded_text = decoded_text_orig.replace(' ', '')
+        encoded_text_orig = self.encoded_text
+        encoded_text = encoded_text_orig.replace(' ', '')
+
+        i = 0
+        key = ''
+        for i in range(0, len(decoded_text)):
+            # Find the positions of the decoded and encoded letters
+            pos_decoded = self.alphabet_lower.index(decoded_text[i])
+            pos_encoded = self.alphabet_upper.index(encoded_text[i])
+            # Determine the rotation from decoded to encoded
+            if pos_encoded >= pos_decoded:
+                rotation = pos_encoded - pos_decoded
+            else:
+                rotation = pos_encoded + 26 - pos_decoded
+            # Determine the letter corresponding to the rotation
+            key = key + chr(65 + rotation)
+        
+        # Restore the true decoded and encoded text
+        self.set_decoded_text(decoded_text_orig)
+        self.set_encoded_text(encoded_text_orig)
+
+        return self._add_spaces(key)
     
     def encode_monoalphabetic(self, key, to_unicode=True):
         # Get the old and new alphabets
