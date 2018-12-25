@@ -1,3 +1,5 @@
+from crpt import Cryptography
+
 rows = [['A','E','H','I','N','R','T','T','W','X','X','Z'],
 ['A','D','E','I','N','S','T','T','V','X','X','X'],
 ['D','E','J','M','N','O','R','T','T','X','X','X'],
@@ -35,3 +37,9 @@ for column in columns:
   i += 1
 
 print(options)
+
+
+crypt = Cryptography()
+crypt.set_decoded_text('terdamse kraamzaal het kind Jacob Willem Katadreuffe met de sectio caesarea ter wereld geholpen'.lower().replace(' ', 'x'))
+crypt.set_encoded_text('AIKAGQRSZRKEXMMTWZLYHQFCFQHUWACAYSWVIOIJFXVTLOVRXJCHLOIGQAYFLBFXFFLOARPBZRTUOEEUZIQIIVZNVPXGTVKU')
+print(crypt.get_vigenere_key())
