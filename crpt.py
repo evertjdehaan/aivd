@@ -142,6 +142,33 @@ class Cryptography(object):
                 decoded_text += char
         
         return decoded_text
+
+    def get_monoalphabetic_key(self):
+        # Get the decoded and encoded text
+        decoded_text_orig = self.decoded_text
+        decoded_text = self._get_clean_key(decoded_text_orig.replace(' ', '')).lower()
+        encoded_text_orig = self.encoded_text
+        encoded_text = self._get_clean_key(encoded_text_orig.replace(' ', ''))
+
+        # Return an error if the decoded and encoded messages are not the same in length
+        assert len(decoded_text) == len(encoded_text)
+
+        remaining_chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        key = '.'*26
+        for i in range(0, len(encoded_text)):
+            alph_position = ord(decoded_text[i]) - ord('a')
+            key = key[:alph_position] + encoded_text[i].upper() + key[alph_position+1:]
+            remaining_chars = remaining_chars.replace(encoded_text[i], '')
+        
+        # Restore the true decoded and encoded text
+        self.set_decoded_text(decoded_text_orig)
+        self.set_encoded_text(encoded_text_orig)
+
+        # Return an error if there is no key (i.e. the same letter occurs at multiple positions in the key)
+        key_chars = key.replace('.', '')
+        assert len(key_chars) == len(set(key_chars))
+
+        return self._add_spaces(key), remaining_chars
     
     def encode_rotation(self, rotation):
         encoded_text = ''
