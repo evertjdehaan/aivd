@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Dec 30 20:42:21 2016
-
 @author: evehaa
 """
 
@@ -383,6 +382,24 @@ class Cryptography(object):
             decoded_text += self.encoded_text[original_positions.index(i)]
             
         return decoded_text.lower()
+
+    def encode_atbash(self):
+        # Replace a by Z, b by Y, etc.
+        encoded_text = ''
+        for char in self.decoded_text:
+            letter_num = ord(char) - ord('a') + 1
+            encoded_text += char(ord('A') + 26 - letter_num) 
+        
+        return encoded_text
+
+    def decode_atbash(self):
+        # Replace A by z, B by y, etc.
+        decoded_text = ''
+        for char in self.encoded_text:
+            letter_num = ord(char) - ord('A') + 1
+            decoded_text += chr(ord('a') + 26 - letter_num) 
+        
+        return decoded_text
             
     def _get_unique_key(self, key, to_unicode=True):
         local_key = self._get_clean_key(key, to_unicode)
