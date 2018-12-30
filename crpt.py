@@ -24,6 +24,24 @@ class Cryptography(object):
                       ['W/ZO', 'ZO/W'], ['NW/N', 'N/NW'], ['NW/NO', 'NO/NW'],
                       ['N/ZO', 'ZO/N'], ['NO/O', 'O/NO'], ['NO/ZO', 'ZO/NO'],
                       ['NW/O', 'O/NW'], ['O/ZO', 'ZO/O']]
+    alphabet_baudot = {
+        'letters':
+            {'00000': '', '00001': 'a', '00010': 'e', '00011': '/', '00100': 'y',
+             '00101': 'u', '00110': 'i', '00111': 'o', '01000': 'FS', '01001': 'j',
+             '01010': 'g', '01011': 'h', '01100': 'b', '01101': 'c', '01110': 'f',
+             '01111': 'd', '10000': ' ', '10001': '-', '10010': 'x', '10011': 'z',
+             '10100': 's', '10101': 't', '10110': 'w', '10111': 'v', '11000': '',
+             '11001': 'k', '11010': 'm', '11011': 'l', '11100': 'r', '11101': 'q',
+             '11110': 'n', '11111': 'p'},
+        'figures':
+            {'00000': '', '00001': '1', '00010': '2', '00011': '1/', '00100': '3',
+             '00101': '4', '00110': '3/', '00111': '5', '01000': ' ', '01001': '6',
+             '01010': '7', '01011': '^1', '01100': '8', '01101': '9', '01110': '5/',
+             '01111': '0', '10000': 'LS', '10001': '.', '10010': '9/', '10011': ':',
+             '10100': '7/', '10101': '^2', '10110': '?', '10111': '\'', '11000': '',
+             '11001': '(', '11010': ')', '11011': '=', '11100': '-', '11101': '/',
+             '11110': '€', '11111': '+'}
+    }
     
     def __init__(self):
         self.encoded_text = ''
@@ -400,6 +418,30 @@ class Cryptography(object):
             decoded_text += chr(ord('a') + 26 - letter_num) 
         
         return decoded_text
+
+    def decode_baudot(self, lsb_or_msb='msb'):
+        # Make sure the stream only contains ones and zeros
+        assert len(self.encoded_text.replace('0', '').replace('1', '')) == 0
+        # Split the stream in blocks of five numbers
+        assert len(self.encoded_text) % 5 == 0
+        signs = [self.encoded_text[i:i+5] for i in range(0, len(self.encoded_text), 5)]
+
+        decoded_text = ''
+        alphabet = 'letters'
+        for sign in signs:
+            # Reverse the sign if we need to look right to left
+            if lsb_or_msb.lower == 'lsb':
+                sign = sign[::-1]
+          
+            decoded_char = self.alphabet_baudot[alphabet][sign]
+            if decoded_char == 'FS':
+                alphabet = 'figures'
+            elif decoded_char == 'LS':
+                alphabet = 'letters'
+            else:
+                decoded_text += decoded_char
+
+        return decoded_text 
             
     def _get_unique_key(self, key, to_unicode=True):
         local_key = self._get_clean_key(key, to_unicode)
