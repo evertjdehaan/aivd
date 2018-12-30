@@ -430,7 +430,7 @@ class Cryptography(object):
         alphabet = 'letters'
         for sign in signs:
             # Reverse the sign if we need to look right to left
-            if lsb_or_msb.lower == 'lsb':
+            if lsb_or_msb.lower() == 'lsb':
                 sign = sign[::-1]
           
             decoded_char = self.alphabet_baudot[alphabet][sign]
