@@ -149,15 +149,15 @@ def update_all_lists(b, c, d, e, f, g, h, i, j):
   return b, c, d, e, f, g, h, i, j
 
 def print_lists(b, c, d, e, f, g, h, i, j):
-  print('B\n', b)
-  print('C\n', c)
-  print('D\n', d)
-  print('E\n', e)
-  print('F\n', f)
-  print('G\n', g)
-  print('H\n', h)
-  print('I\n', i)
-  print('J\n', j)
+  print('B ({})\n'.format(len(b)), b)
+  print('C ({})\n'.format(len(c)), c)
+  print('D ({})\n'.format(len(d)), d)
+  print('E ({})\n'.format(len(e)), e)
+  print('F ({})\n'.format(len(f)), f)
+  print('G ({})\n'.format(len(g)), g)
+  print('H ({})\n'.format(len(h)), h)
+  print('I ({})\n'.format(len(i)), i)
+  print('J ({})\n'.format(len(j)), j)
 
 def print_options_a(f, g, h, i, j):
   a0 = list(set([int_to_roman(num)[4] for num in f]))
@@ -264,6 +264,23 @@ B, C, D, E, F, G, H, I, J = update_all_lists(B, C, D, E, F, G, H, I, J)
 print_lists(B, C, D, E, F, G, H, I, J)
 print_options_a(F, G, H, I, J)
 
+### Brute force all remaining options
+works_C = []
+works_D = []
+works_E = []
+for c in C:
+  for d in D:
+    for e in E:
+      try_B, try_C, try_D, try_E, try_F, try_G, try_H, try_I, try_J = update_all_lists(B, [c], [d], [e], F, G, H, I, J)
+      if len(try_B) > 0 and len(try_G) > 0 and len(try_H) > 0 and len(try_I) > 0 and len(try_J) > 0:
+        # C, D and E are preset, F equals D
+        works_C.append(c)
+        works_D.append(d)
+        works_E.append(e)
+
+try_B, try_C, try_D, try_E, try_F, try_G, try_H, try_I, try_J = update_all_lists(B, list(set(works_C)), list(set(works_D)), list(set(works_E)), F, G, H, I, J)
+print_lists(try_B, try_C, try_D, try_E, try_F, try_G, try_H, try_I, try_J)
+print_options_a(try_F, try_G, try_H, try_I, try_J)
 
 ### Solution AVICII
 F = [num for num in F if valid_roman[num][4] == 'V']
