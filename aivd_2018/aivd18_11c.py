@@ -39,3 +39,9 @@ crypt = Cryptography()
 crypt.set_encoded_text(full_string)
 print(crypt.decode_baudot())
 print(crypt.decode_baudot('lsb'))
+
+# The first result makes way more sense than the second..., but it is no useful text yet...
+crypt.set_encoded_text(crypt.decode_baudot())
+
+for i in range(26):
+  print(i, crypt.decode_rotation(i))
