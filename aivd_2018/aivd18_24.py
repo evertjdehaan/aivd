@@ -1,3 +1,5 @@
+from itertools import groupby
+
 string = [
   'B', 'e', 'e', 'h', 'b', 'k', 'e', 'a', ' ', 'e', 't', 'e', 'd', ' ', ' ', 'l', 'e', 'b', 'a', 'r', 'e', ' ', ' ', 'n', ' ', ' ', 'E',
   'd', 'g', 'p', 'd', 'v', ' ', 'l', 'n', 'i', 'a', ' ', 'e', 'o', 'n', 't', 'k', 'v', 'r', 'l', 's', 'd', ' ', 'e', 't', 'Z', 'a', 'u',
@@ -111,3 +113,24 @@ for i in range(len(string)):
   position = (position + i) % len(string)
   new_text = new_text + string[position]
 print(new_text)
+print()
+
+### Try taking two letters at once
+print('--- TWO AT ONCE ---')
+old_text = ''.join(string)
+new_text = ''
+skip = 2
+for i in range(len(old_text)):
+  position_start = (skip*i) % len(old_text)
+  position_end = (skip*(i+1)) % len(old_text)
+  if position_end > position_start:
+    new_text += old_text[position_start:position_end]
+  else:
+    new_text += old_text[position_start:len(string)] + old_text[0:position_end]
+print(new_text)
+print()
+
+### Get me the letterfrequencies
+print('--- LETTER FREQUENCIES ---')
+print({key: len(list(group)) for key, group in groupby(sorted(string))})
+# Okay, the letterfrequencies look kind of normal
