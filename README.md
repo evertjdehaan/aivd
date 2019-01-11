@@ -15,3 +15,7 @@ scores_german =
 # List of ciphers
 
 https://www.dcode.fr/tools-list
+
+# Integer sequences
+
+https://oeis.org/
