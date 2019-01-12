@@ -1,4 +1,5 @@
 from crpt import Cryptography
+from getwords import *
 
 words = ['GEESTELIJK', 'ONGEWIJD', 'MACHTIG', 'WEERGEKOMEN', 'STER', 'WERKELIJK', 'KINDJE', 'BUITEN', 'KNUFFELEN', 'KONIJN', 'LICHTBUNDEL', 'ENGELTJE', 'KUNSTIG', 'PLASTISCH', 'HAASTEN', 'WINDSNELHEID', 'WEERLEGGEN', 'DUVEL', 'ACHTER', 'FORMALISEREN', 'VLOEIEND', 'KOSTELIJK', 'STAPPEN', 'LUISTER', 'REKENING', 'DONDER', 'STAGE', 'VERDER', 'FINEREN', 'FIER', 'ONBEGREPEN', 'AANDACHTIG', 'ZINDELIJK', 'RESTJE', 'RECEPTIE', 'WOORDELIJKE', 'ONTERING', 'LALA', 'OTTER', 'WERF', 'BRUI', 'EMMERS', 'MISERES', 'GETTO']
 
@@ -19,3 +20,7 @@ for i in range(1, 50):
   for j in range(0, len(string), i):
     prnt += string[j]
   print(prnt)
+
+# Solution
+for word in words:
+  print(getwords(regex='^.'+word.lower()[1:]+'$'))
