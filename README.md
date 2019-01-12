@@ -19,3 +19,7 @@ https://www.dcode.fr/tools-list
 # Integer sequences
 
 https://oeis.org/
+
+# Word finder
+
+http://m.findallwords.com/wordfinder_index_nl.php
